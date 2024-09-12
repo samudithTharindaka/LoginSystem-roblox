@@ -15,7 +15,6 @@ end
 
 function PlayerLoginDataStore:RetrieveData(player)
     local dataRetrived = self.dataStore:GetAsync(tostring(player.name))
-    print("Data retrieved for player: " .. player.Name.. " is: " .. dataRetrived)
     return dataRetrived
 end
 
