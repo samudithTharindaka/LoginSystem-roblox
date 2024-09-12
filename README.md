@@ -28,7 +28,7 @@ local encryptedData = EncryptDataLibrary:encryptData(originalData)
 print("Encrypted Data: " .. encryptedData) 
 ```
 
-###2. Decrypting Data
+### 2. Decrypting Data
 
 To decrypt data, use the `decryptData function:`
 
@@ -37,7 +37,7 @@ To decrypt data, use the `decryptData function:`
 local decryptedData = EncryptDataLibrary:decryptData(encryptedData)
 print("Decrypted Data: " .. decryptedData)
 ```
-#Example
+# Example
 Here is a complete example of `encrypting` and `decrypting` data:
 
 ```lua
@@ -55,11 +55,11 @@ local decryptedData = EncryptDataLibrary:decryptData(encryptedData)
 print("Decrypted Data: " .. decryptedData)
 ```
 
-###Security Considerations
+### Security Considerations
 `Fixed Key:` The library uses a hardcoded fixed key (FixedSecretKey123) for encryption and decryption. This key should be kept secret to prevent unauthorized access to your data.
 `Obfuscation:` While this library provides basic encryption, it is not suitable for highly sensitive data. For better security, consider more advanced encryption techniques and key management strategies.
 Contributing
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.
 
-###License
+### License
 This project is licensed under the MIT License. See the LICENSE file for more details.
