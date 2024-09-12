@@ -8,7 +8,7 @@ passDataEvent.Parent = replicatedStorage
 
 local playerLoginDataStore = require(replicatedStorage:WaitForChild("Shared"):WaitForChild("playerLoginDataStore"))
 local encryptDataLibrary = require(replicatedStorage:WaitForChild("Shared"):WaitForChild("EncryptDataLibrary"))
-local PlayerLocal = require(replicatedStorage:WaitForChild("Shared"):WaitForChild("PlayerLocal"))
+
 
 passDataEvent.OnServerEvent:Connect(function(player, data)
     print(player.Name .. " sent the following data: " .. data)
@@ -18,8 +18,8 @@ passDataEvent.OnServerEvent:Connect(function(player, data)
 
     local newDataStore =  playerLoginDataStore.new()
     newDataStore:SaveData(player, encryptedData)
+    local dataRetrived = newDataStore:RetrieveData(player)
 
-
-    local decryptedData = newDataObj:decryptData(encryptedData)
+    local decryptedData = newDataObj:decryptData(dataRetrived)
     print("Decrypted data: " .. decryptedData)
 end)
