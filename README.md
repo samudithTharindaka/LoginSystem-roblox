@@ -14,6 +14,7 @@ To use this library in your Roblox project, follow these steps:
 1. Copy the `EncryptDataLibrary` script into your Roblox project.
 2. Require the `EncryptDataLibrary` in any script where you want to use encryption or decryption.
 
+Also you can clone the repo and use the ROJO plugin to import the scripts to your game easily.
    **The .rbxl file is attached to the repository**
 
 ## Usage
